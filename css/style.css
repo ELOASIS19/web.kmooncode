@@ -1,0 +1,221 @@
+*{padding: 0;
+    margin: 0;
+}*
+body{
+    background-color: #34495e;
+    font-family:  Courier;
+}
+
+header{
+    display: flex;
+    font-family: cursive;
+    color: #fdfefe;
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 750px;
+    justify-content:space-evenly;
+}
+nav a{
+    font-size: 38px;
+    color:#fdfefe;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #089f;
+}
+
+main{
+    display: block;
+}
+
+.Principal{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 700px;
+}
+
+.TextP{
+    display: block;
+    width: 50%;
+    height: 100%;
+    align-content: space-around;
+}
+
+.TextP > h2{
+    font-size: 65px;
+    text-align:center;
+}
+.TextP h2 + p{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#AboutMe{
+    display: block;
+    justify-items: center;
+    height: 800px;
+}
+
+.About{
+    display: block;
+    justify-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.About > h2{
+    font-size: 70px;
+    text-align: justify;
+}
+
+.About h2 + p{
+    width: 800px;
+    margin: 25px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.Tecn{
+    justify-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.Tecn > h3{
+    font-size: 40px;   
+}
+
+#Project{
+    display: block;
+    justify-items: center;
+    height: 600px;
+}
+
+#Project > h2{
+    font-size: 70px;
+    justify-content: center; 
+}
+
+#Project > p{
+    font-size: 40px;
+}
+
+#Information{
+    background: #089f;
+    display: block;
+    justify-items: center;
+    align-content: space-around;
+    height: 150px;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+    nav a {
+        font-size: 28px;
+    }
+    .Principal {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .TextP {
+        width: 80%;
+    }
+    .TextP > h2 {
+        font-size: 50px;
+    }
+    .TextP h2 + p {
+        font-size: 24px;
+    }
+    .About h2 + p {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        font-size: 24px;
+    }
+    .Principal img {
+        width: 80%;
+    }
+    .TextP {
+        width: 90%;
+    }
+    .TextP > h2 {
+        font-size: 40px;
+    }
+    .TextP h2 + p {
+        font-size: 20px;
+    }
+    .About h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .About h2 + p {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .Tecn img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 20px;
+    }
+    .Principal img {
+        width: 100%;
+    }
+    .TextP > h2 {
+        font-size: 30px;
+    }
+    .TextP h2 + p {
+        font-size: 18px;
+    }
+    .About h2 {
+        font-size: 40px;
+    
+    }
+    .About h2 + p {
+        font-size: 14px;
+
+    }
+    .Tecn h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #Project > h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    #Project > p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+
